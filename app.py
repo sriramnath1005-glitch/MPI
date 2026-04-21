@@ -36,7 +36,7 @@ st.markdown("""
 # ── Data Loading ───────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    mpi = pd.read_excel("mpi_project_data_sources.xlsx", sheet_name="NITI_MPI_States")
+mpi = pd.read_excel("mpi_project_data_sources.xlsx", sheet_name="NITI_MPI_States")
 hdi = pd.read_excel("mpi_project_data_sources.xlsx", sheet_name="GDL_SHDI_States")
 
     # Clean HDI – remove "Total" row, melt year columns
